@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  {{ if ne (getenv "HUGO_ENV") "production"}}<meta name="robots" content="noindex,nofollow">{{ end }}
+  <title>{{ .Site.Title }}</title>
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/styles.css">
+</head>
+
+<body>

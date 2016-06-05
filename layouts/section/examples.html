@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+
+<p>List of examples</p>
+
+{{ range where .Data.Pages.ByDate "Section" "examples" }}
+<ul>
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+</ul>
+{{ end }}
+
+{{ partial "footer.html" . }}
